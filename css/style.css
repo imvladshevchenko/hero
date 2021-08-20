@@ -470,6 +470,7 @@ section {
   background-image: url(../img/main-screen/devider1.png);
   margin-right: 0.7em;
   margin-top: -0.15em;
+  background-size: cover;
 }
 .main-screen__rights {
   font-weight: 500;
@@ -854,5 +855,13 @@ section {
   .coin14 {
     top: 85.5em;
     left: 80em;
+  }
+  .img-wrapper {
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
+    right: 0em;
+    top: -5em;
+    height: 81em;
   }
 }
