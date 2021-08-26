@@ -868,7 +868,9 @@ section {
   }
   .bonus__list {
     margin-bottom: 3em;
-    max-width: 80em;
+    min-width: 80em;
+    padding: 0 3em;
+    overflow-x: hidden;
   }
   .title {
     margin-bottom: 0.6em;
