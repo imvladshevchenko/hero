@@ -161,6 +161,110 @@ section {
     width: 2em;
   }
 }
+@keyframes coins1-mob {
+  0% {
+    width: 6.3em;
+  }
+  100% {
+    width: 5.2em;
+  }
+}
+@keyframes coins2-mob {
+  0% {
+    width: 4.2em;
+  }
+  100% {
+    width: 5em;
+  }
+}
+@keyframes coins3-mob {
+  0% {
+    width: 3.6em;
+  }
+  100% {
+    width: 5em;
+  }
+}
+@keyframes coins4-mob {
+  0% {
+    width: 5em;
+  }
+  100% {
+    width: 4em;
+  }
+}
+@keyframes coins5-mob {
+  0% {
+    width: 4.6m;
+  }
+  100% {
+    width: 3.5em;
+  }
+}
+@keyframes coins6-mob {
+  0% {
+    width: 6.4em;
+  }
+  100% {
+    width: 5.4em;
+  }
+}
+@keyframes coins7-mob {
+  0% {
+    width: 3.8em;
+  }
+  100% {
+    width: 4.7em;
+  }
+}
+@keyframes coins8-mob {
+  0% {
+    width: 4.4em;
+  }
+  100% {
+    width: 3.4em;
+  }
+}
+@keyframes coins9-mob {
+  0% {
+    width: 4.2em;
+  }
+  100% {
+    width: 5.5em;
+  }
+}
+@keyframes coins10-mob {
+  0% {
+    width: 5em;
+  }
+  100% {
+    width: 4em;
+  }
+}
+@keyframes coins12-mob {
+  0% {
+    width: 4em;
+  }
+  100% {
+    width: 5em;
+  }
+}
+@keyframes coins13-mob {
+  0% {
+    width: 3.5em;
+  }
+  100% {
+    width: 4.4em;
+  }
+}
+@keyframes coins14-mob {
+  0% {
+    width: 5em;
+  }
+  100% {
+    width: 4.2em;
+  }
+}
 @keyframes arrow1 {
   0% {
     transform: translateY(0) rotate(0);
@@ -251,26 +355,26 @@ section {
 }
 @keyframes coins-mob {
   0% {
-    width: 15.4;
+    width: 25.4em;
   }
   100% {
-    width: 11.4em;
+    width: 30.4em;
   }
 }
 @keyframes spin-mob {
   0% {
-    width: 18em;
+    width: 25.4em;
   }
   100% {
-    width: 14em;
+    width: 30.4em;
   }
 }
 @keyframes plus-mob {
   0% {
-    width: 4.2em;
+    width: 8.2em;
   }
   100% {
-    width: 5.2em;
+    width: 6.2em;
   }
 }
 
@@ -665,6 +769,9 @@ section {
   text-align: center;
   max-width: 67.1em;
 }
+.mobile {
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .button {
@@ -681,47 +788,57 @@ section {
   }  
 }
 
-@media (max-width: 770px) {
+@media (max-width: 500px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
   .header {
-    padding: 1.4em 0 0 26em;
+    padding: 1.4em 0 0 13em;
   }
   main {
-    padding: 0 26em;
+    padding: 0 13em;
+  }
+  .text {
+    font-size: 3.2em;
+    font-weight: bold;
   }
   .logo {
-    width: 15.9em;
+    width: 22.9em;
   }
   .background1 {
-    top: -5.3em;
-    right: -12em;
+    top: -1.3em;
+    right: -57em;
     z-index: -10;
-    width: 63.4em;
+    width: 113.4em;
   }
   .main-screen {
     margin-bottom: 1.3em;
-    padding-top: 2em;
+    padding-top: 4em;
   }
   .main-screen__img {
-    width: 29.5em;
-    top: 13.4em;
-    right: -2.9em;
+    width: 48.5em;
+    top: 20.4em;
+    right: -9.9em;
   }
   .main-screen__text {
-    font-size: 1.65em;
+    font-size: 2.65em;
     margin-bottom: 0.7em;
   }
   .main-screen__title {
-    margin-bottom: 1.3em;
-    font-size: 2.4em;
+    margin-bottom: 1.9em;
+    font-size: 4em;
   }
   .button {
-    font-size: 1.65em;
+    font-size: 2.75em;
   }
   .button:hover {
     background-color: #1c61dd;
   }
   .main-screen__rights {
-    font-size: 1.45em;
+    font-size: 2.5em;
     max-width: 17em;
     margin-bottom: 1.1em;
   }
@@ -730,13 +847,13 @@ section {
     margin: 0;
   }
   .main-screen__rights:nth-of-type(2n) {
-    margin-top: 2.3em;
+    margin-top: 3.4em;
   }
   .bonus__list-text {
-    font-size: 1.9em;
+    font-size: 3.3em;
   }
   .bonus__circle {
-    width: 16.2em;
+    width: 30.2em;
   }
   .bonus__coins {
     width: 15.4em;
@@ -750,118 +867,149 @@ section {
     animation: plus-mob 3s ease-in-out alternate infinite;
   }
   .bonus__list {
-    max-width: 45em;
+    margin-bottom: 3em;
+    max-width: 80em;
   }
   .title {
     margin-bottom: 0.6em;
+    font-size: 4em;
   }
   .start {
     display: flex;
     justify-content: center;
-    margin-bottom: 3.3em;
+    margin-bottom: 8.3em;
   }
   .start__list-text {
-    font-size: 1.9em;
+    font-size: 3.2em;
+    font-weight: bold;
+    max-width: none;
+    letter-spacing: 0;
   }
   .start__list {
     flex-direction: column;
     align-items: flex-start;
-    width: 46em;
-    height: 16.2em;
-    padding-left: 5em;
-  }
-  .start__list-text {
-    max-width: none;
+    width: 72em;
+    height: 30.2em;
+    padding-left: 6em;
   }
   .start__list-item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
   .start__list-img {
-    width: 0.3em;
-    height: 3em;
+    width: 0.5em;
+    height: 5.3em;
   }
   .start__img-wrapper {
     width: unset;
     height: unset;
     border-radius: unset;
+    margin-right: 1.9em;
+    margin-left: 1.4em;
   }
   .start__arrow {
     transform: rotate(90deg);
+    width: 5.2em;
   }
   .arrow1 {
-    right: -2.7em;
-    top: 3.1em;
+    right: -5.7em;
+    top: 5.1em;
     animation: arrow1-mob 3.2s ease-in-out alternate infinite;
   }
   .arrow2 {
-    right: -3.3em;
-    top: 3.1em;
+    right: -6.3em;
+    top: 4.1em;
     animation: arrow2-mob 3.7s ease-in-out alternate infinite;
   }
   .footer__rights {
-    font-size: 1.45em;
+    font-size: 2.55em;
     max-width: 28em;
   }
+  .footer {
+    padding-top: 8.5em;
+  }
   .background2 {
-    top: 47.1em;
+    top: 14.1em;
+    right: -37em;
+    width: 200em;
   }
   .coin1 {
-    top: 8.9em;
-    left: 12em;
+    top: 17.9em;
+    left: 5em;
+    animation: coins1-mob 1.8s ease-in-out alternate infinite;
   }
   .coin2 {
-    top: 21.1em;
-    left: 19em;
+    top: 44.1em;
+    left: 8em;
+    animation: coins2-mob 2.5s ease-in-out alternate infinite;
   }
   .coin3 {
-    top: 14.5em;
-    left: 50em;
+    top: 30.5em;
+    left: 48em;
+    animation: coins3-mob 1.3s ease-in-out alternate infinite;
   }
   .coin5 {
-    left: 66em;
+    left: 72em;
+    animation: coins5-mob 2.9s ease-in-out alternate infinite;
   }
   .coin6 {
-    top: 5em;
-    left: 72.2em;
+    top: 10em;
+    left: 80.2em;
+    animation: coins6-mob 2.2s ease-in-out alternate infinite;
   }
   .coin7 {
-    left: 82em;
+    left: 90em;
+    animation: coins7-mob 1.5s ease-in-out alternate infinite;
   }
   .coin8{
-    top: 13.5em;
-    left: 80em;
+    top: 16.5em;
+    left: 94em;
+    animation: coins8-mob 2.1s ease-in-out alternate infinite;
   }
   .coin9 {
-    top: 24.5em;
-    left: 76em;
+    top: 40.5em;
+    left: 91em;
+    animation: coins9-mob 1.5s ease-in-out alternate infinite;
   }
   .coin10 {
-    top: 41.5em;
-    left: 15em;
+    top: 71.5em;
+    left: 5em;
+    animation: coins10-mob 2s ease-in-out alternate infinite;
   }
   .coin11 {
-    top: 66.5em;
-    left: 16em;
+    top: 115.5em;
+    left: 8em;
+    animation: coins11-mob 3s ease-in-out alternate infinite;
   }
   .coin12 {
-    top: 86.5em;
-    left: 13em;
+    top: 160.5em;
+    left: 5em;
+    animation: coins12-mob 2.7s ease-in-out alternate infinite;
   }
   .coin13 {
-    top: 58.5em;
-    left: 76em;
+    top: 110.5em;
+    left: 86em;
+    animation: coins13-mob 1.2s ease-in-out alternate infinite;
   }
   .coin14 {
-    top: 85.5em;
-    left: 80em;
+    top: 161.5em;
+    left: 91em;
+    animation: coins14-mob 1.8s ease-in-out alternate infinite;
   }
-  .img-wrapper {
+  .img-wrapper--cloud {
     position: absolute;
     overflow-x: hidden;
     left: 0;
     right: 0em;
-    top: -5em;
+    top: -6.2em;
     height: 81em;
+  }
+  .img-wrapper--cards {
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
+    right: 0em;
+    top: 65.8em;
+    height: 129em;
   }
 }
